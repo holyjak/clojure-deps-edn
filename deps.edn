@@ -44,7 +44,15 @@
  ;; Alias definitions
 
  :aliases
- {;; ---------------------------------------------------
+ {
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; MINE
+  :dev/fulcro     {:override-deps {com.fulcrologic/fulcro     {:local/root "/Users/holyjak/Projects/external/fulcro-all/fulcro"}}}
+  :dev/fulcro-rad {:override-deps {com.fulcrologic/fulcro-rad {:local/root "/Users/holyjak/Projects/external/fulcro-all/fulcro-rad"}}}
+  :dev/fulcro-rad-semantic-ui {:override-deps {com.fulcrologic/fulcro-rad-semantic-ui {:local/root "/Users/holyjak/Projects/external/fulcro-all/fulcro-rad-semantic-ui"}}}
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; Development environment
   ;; Aliases work with Clojure CLI -M -X or -T execution options
 
