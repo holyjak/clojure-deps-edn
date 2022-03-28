@@ -51,6 +51,10 @@
   :dev/fulcro-rad {:override-deps {com.fulcrologic/fulcro-rad {:local/root "/Users/holyjak/Projects/external/fulcro-all/fulcro-rad"}}}
   :dev/fulcro-rad-semantic-ui {:override-deps {com.fulcrologic/fulcro-rad-semantic-ui {:local/root "/Users/holyjak/Projects/external/fulcro-all/fulcro-rad-semantic-ui"}}}
   :tool/grasp {:deps {io.github.borkdude/grasp {:git/sha "3fa99aedd0594c0ae958de7d25d8900992f60ca5"}}}
+  ;; Treemap of the dependencies size: `clojure -X:snowball :deps deps.edn` or `clojure -X:snowball :lib mvn-lib-name [:mvn/version '"1.0.0"']`
+  ;; options: `:view treemap-image :path out.png` x `:view print`. Default version: `{:mvn/version "RELEASE"}`. Lein: do `lein install` -> as lib
+  :tool/snowball {:replace-deps {com.phronemophobic/snowball {:mvn/version "1.0"}}
+                  :exec-fn com.phronemophobic.snowball/-main}
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
