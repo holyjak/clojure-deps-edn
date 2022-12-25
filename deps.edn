@@ -59,6 +59,7 @@
   ;; options: `:view treemap-image :path out.png` x `:view print`. Default version: `{:mvn/version "RELEASE"}`. Lein: do `lein install` -> as lib
   :tool/snowball {:replace-deps {com.phronemophobic/snowball {:mvn/version "1.0"}}
                   :exec-fn com.phronemophobic.snowball/-main}
+  :lib/flowstorm {:extra-deps {com.github.jpmonettas/flow-storm-dbg {:mvn/version "RELEASE"}, com.github.jpmonettas/flow-storm-inst {:mvn/version "RELEASE"}}}
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
