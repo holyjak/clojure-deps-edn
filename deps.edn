@@ -65,6 +65,7 @@
   :dev/fulcro-rad-datomic {:override-deps {com.fulcrologic/fulcro-rad-datomic {:local/root "/Users/holyjak/Projects/external/fulcro-all/fulcro-rad-datomic"
                                                                                ;; Doesn't seem to have effect? (d.p. incl. in test by a dependency)
                                                                                :exclusions [com.datomic/datomic-pro]}}}
+  :jh/clj12 {:override-deps {org.clojure/clojure {:mvn/version "1.12.0-alpha9"}}}
   :tool/grasp {:deps {io.github.borkdude/grasp {:git/sha "3fa99aedd0594c0ae958de7d25d8900992f60ca5"}}}
   ;; Treemap of the dependencies size: `clojure -X:snowball :deps deps.edn` or `clojure -X:snowball :lib mvn-lib-name [:mvn/version '"1.0.0"']`
   ;; options: `:view treemap-image :path out.png` x `:view print`. Default version: `{:mvn/version "RELEASE"}`. Lein: do `lein install` -> as lib
@@ -530,8 +531,8 @@
 
   ;; Flowstorm, a tracing debugger
   ;; https://github.com/jpmonettas/flow-storm-debugger
-  :lib/flowstorm
-  {:extra-deps {com.github.jpmonettas/flow-storm-dbg {:mvn/version "3.7.5"}}}
+  ;; :lib/flowstorm
+  ;; {:extra-deps {com.github.jpmonettas/flow-storm-dbg {:mvn/version "3.7.5"}}}
 
   ;; End of Debug Tools
   ;; ---------------------------------------------------
