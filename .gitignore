@@ -1,7 +1,43 @@
-.lein/repl-history
-.lein/self-installs/
-.lein/credentials.clj.gpg
-.clj-kondo/
-.lsp/.cache/
-.portal/
-**/.calva/repl.calva-repl
+# ------------------------
+# Clojure Project Git Ignore file patterns
+# 
+# Ignore all except patterns starting with !
+# Add comments on separate lines, not same line as pattern
+# ------------------------
+
+# ------------------------
+# Ignore everthing in root directory
+/*
+
+# ------------------------
+# Common project files
+!CHANGELOG.md
+!README.md
+
+# ------------------------
+# Include Clojure project & config
+!build.clj
+!deps.edn
+!pom.xml
+!dev/
+!docs/
+!resources/
+!src/
+!test/
+
+# ------------------------
+# Include Clojure tools
+!.cljstyle
+!.dir-locals.el
+!compose.yaml
+!Dockerfile
+!.dockerignore
+!Makefile
+!tests.edn
+
+# ------------------------
+# Include Git & CI workflow
+!.gitattributes
+!.gitignore
+!.github/
+
